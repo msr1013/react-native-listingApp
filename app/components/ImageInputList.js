@@ -8,7 +8,7 @@ export default function ImageInputList({
   onAddImage,
 }) {
   return (
-    <View style={StyleSheet.container}>
+    <View style={styles.container}>
       {imageUris.map((uri) => (
         <ImageInput
           imageUri={uri}
