@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Image } from "react-native";
+import { View, Image, StyleSheet } from "react-native";
 import * as Yup from "yup";
 
 import Screen from "../components/Screen";
-import styles from "../config/styles";
+// import styles from "../config/styles";
 import { AppFormField, SubmitButton, AppForm } from "../components/Forms";
 
 const validationSchema = Yup.object().shape({
@@ -53,8 +53,14 @@ export default function RegisterScreen() {
           />
         </View>
 
-        <SubmitButton>REGISTER</SubmitButton>
+        <SubmitButton title="Register" />
       </AppForm>
     </Screen>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 10,
+  },
+});
